@@ -4,7 +4,8 @@
   "description": "a window into your programs ignorance",
   "dependencies": {
     "fastqueue": "http://github.com/jkroso/fastqueue/tarball/0.2.0",
-    "emitter": "http://github.com/jkroso/emitter/tarball/0.7.0"
+    "emitter": "http://github.com/jkroso/emitter/tarball/0.7.0",
+    "runtime-context": "0.1.1"
   },
   "devDependencies": {},
   "repository": {
