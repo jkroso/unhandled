@@ -1,0 +1,27 @@
+{
+  "name": "unhandled",
+  "repo": "jkroso/unhandled",
+  "description": "a window into your programs ignorance",
+  "version": "0.1.0",
+  "keywords": [
+    "error",
+    "pool",
+    "async"
+  ],
+  "dependencies": {
+    "jkroso/emitter": "0.7.0",
+    "jkroso/fastqueue": "0.2.0",
+    "jkroso/runtime-context": "0.1.1"
+  },
+  "development": {
+    "visionmedia/mocha": "1.11.0",
+    "jkroso/serve": "1.4.1",
+    "chaijs/chai": "1.7.0",
+    "chaijs/chai-spies": "0.5.1"
+  },
+  "scripts": [
+    "index.js",
+    "unhandled.js"
+  ],
+  "license": "MIT"
+}

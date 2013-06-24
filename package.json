@@ -1,0 +1,20 @@
+{
+  "name": "unhandled",
+  "version": "0.1.0",
+  "description": "a window into your programs ignorance",
+  "dependencies": {
+    "fastqueue": "http://github.com/jkroso/fastqueue/tarball/0.2.0",
+    "emitter": "http://github.com/jkroso/emitter/tarball/0.7.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jkroso/unhandled.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkroso/unhandled/issues"
+  },
+  "keywords": ["error","pool","async"],
+  "author": "Jake Rosoman",
+  "license": "MIT"
+}
