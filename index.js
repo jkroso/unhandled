@@ -14,7 +14,7 @@ if (runtime == 'production') {
 } else {
 	exports = module.exports = require('./unhandled')
 	if (!global.unhandled) global.unhandled = exports
-	else global.unhandled['0.1.0'] = exports
+	else global.unhandled['0.1.1'] = exports
 }
 
 /**
@@ -24,19 +24,20 @@ if (runtime == 'production') {
 if (runtime == 'debug') {
 	exports.on('add', function(error){
 		var timer = setTimeout(function(){
-			console.error('[registered as unhandled for 500ms]', error.stack)
+			console.error('[unhandled] %s', error.stack)
 			cleanUp()
 		}, 500)
 		exports.on('remove', onRemove)
 		exports.on('forget', onForget)
 		function onRemove(e){
 			if (e === error) {
+				console.error('[handled] %s', e.message)
 				clearTimeout(timer)
 				cleanUp()
 			}
 		}
 		function onForget(e){
-			if (e === error) cleanUp
+			if (e === error) cleanUp()
 		}
 		function cleanUp(){
 			exports.off('remove', onRemove)
